@@ -1,4 +1,6 @@
-
+(ns amoebas.competition2021.amoegos.core
+    (:use amoebas.defs amoebas.lib amoebas.run)
+)
     (defn wack-target-selector  
         "picks a target with the lowest health score"
         [hs species env]   
