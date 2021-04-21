@@ -97,3 +97,4 @@
                 )
             )
         )
+(def Evam (create-Pedro 20 70 most-energy-and-fuel-target-selector))
