@@ -63,7 +63,7 @@
                         )
                 do-div  (fn [empty-nb]
                             
-                            {:cmd :divide :dir (rand-nth empty-nb)}         ;; amoeba parenting: drop the child wherever...
+                            {:cmd :divide :dir (last (sections-by-fuel-density empty-nb env))}         ;; drops child where there is most energy
                         )
             ]
 
@@ -88,4 +88,4 @@
     )
 )
 
-(def Evam (create-Hector 15 70 most-energy-and-fuel-target-selector))
+(def Evam (create-Hector 20 70 most-energy-and-fuel-target-selector))
